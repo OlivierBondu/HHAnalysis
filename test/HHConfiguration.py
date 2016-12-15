@@ -102,6 +102,7 @@ framework.getProducer('hlt').parameters.triggers = cms.untracked.FileInPath('cp3
 
 framework.redoJEC()
 framework.smearJets()
+framework.applyMuonCorrection("kamuca")
 framework.doSystematics(['jec', 'jer'])
 process = framework.create()
 
